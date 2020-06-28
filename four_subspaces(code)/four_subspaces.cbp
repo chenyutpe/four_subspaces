@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="four_squares" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/four_squares" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/Clibrary/SDL2/include" />
+					<Add directory="D:/Clibrary/SDL2_image/include" />
+					<Add directory="D:/Clibrary/SDL2/include/SDL2" />
+					<Add directory="D:/Clibrary/SDL2_mixer/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer" />
+					<Add directory="D:/Clibrary/SDL2/lib" />
+					<Add directory="D:/Clibrary/SDL2_image/lib" />
+					<Add directory="D:/Clibrary/SDL2_mixer/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/four_squares" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="SP4.cpp" />
+		<Unit filename="SP4.h" />
+		<Unit filename="Space_4.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Subspace.cpp" />
+		<Unit filename="Subspace.h" />
+		<Unit filename="TitleObject.cpp" />
+		<Unit filename="TitleObject.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
